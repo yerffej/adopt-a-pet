@@ -56,7 +56,7 @@ class SearchBox extends React.Component {
                   ))}
                 </select>
               </label>
-              <button>Submit</button>
+              <button>Search</button>
             </form>
           </div>
         )}
