@@ -17,7 +17,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      location: "Seattle, WA",
+      location: "Denver, CO",
       animal: "",
       breed: "",
       breeds: [],
@@ -74,13 +74,13 @@ class App extends React.Component {
             <span aria-label="stars" role="img">
               ✨
             </span>
-            Adopt Me!
+            Adopt a Pet!
           </Link>
-          <Link to="/search-params">
+          {/* <Link to="/search-params">
             <span aria-label="search" role="img">
               🔍
             </span>
-          </Link>
+          </Link> */}
         </header>
         <Provider value={this.state}>
           <Router>
