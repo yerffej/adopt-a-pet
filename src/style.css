@@ -10,12 +10,14 @@ body {
 }
 .search {
   text-align: center;
+  width: 900px;
+  max-width: 100%;
 }
 .search,
 .details,
 .search-params {
   /* background-color: #c4b2bc; */
-  width: 95%;
+  /* width: 95%; */
   margin: 0 auto 2em;
   padding: 15px;
   border-radius: 5px;
@@ -34,9 +36,10 @@ body {
   padding: 1em;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  flex: 1 0 500px;
+  flex: 1 0 100%;
   box-sizing: border-box;
-  margin: 1rem 0.25em;
+  margin: 0;
+  text-decoration: none;
 }
 .pet:hover {
   background-color: white;
@@ -47,8 +50,6 @@ body {
 }
 
 .info {
-  float: left;
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -62,17 +63,17 @@ body {
 }
 
 .pet h1 {
-  white-space: nowrap;
   font-weight: normal;
-  font-size: 30px;
-  width: 100%;
-  overflow: hidden;
+  font-family: "Amatic SC", cursive;
+  font-size: 45px;
+  color: #666;
   margin: 0;
 }
 
 .pet h2 {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 14px;
+  color: #aaa;
   margin: 0;
 }
 
@@ -143,7 +144,7 @@ header {
 }
 
 .carousel-smaller > img.active {
-  border-color: #333;
+  /* border-color: #333; */
   opacity: 0.3;
 }
 
@@ -224,12 +225,12 @@ select[disabled] {
 
 @media screen and (min-width: 40em) {
   .pet {
-    max-width: calc(50% - 1em);
+    max-width: calc(50%);
   }
 }
 
 @media screen and (min-width: 60em) {
   .pet {
-    max-width: calc(25% - 1em);
+    max-width: calc(33.33%);
   }
 }
